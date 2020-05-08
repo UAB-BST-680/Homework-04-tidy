@@ -1,0 +1,189 @@
+season,episode_number,episode_name,imdb_rating
+1,1,pilot,7.6
+1,2,diversity day,8.3
+1,3,health care,7.9
+1,4,alliance,8.1
+1,5,basketball,8.4
+1,6,hot girl,7.8
+2,1,dundies,8.7
+2,2,sexual harassment,8.2
+2,3,office olympics,8.4
+2,4,fire,8.4
+2,5,halloween,8.2
+2,6,fight,8.2
+2,7,client,8.6
+2,8,performance review,8.2
+2,9,email surveillance,8.4
+2,10,christmas party,8.8
+2,11,booze cruise,8.6
+2,12,injury,9
+2,13,secret,8.3
+2,14,carpet,7.9
+2,15,boys  girls,8.2
+2,16,valentines day,8.3
+2,17,dwights speech,8.4
+2,18,take your daughter to work day,8.3
+2,19,michaels birthday,8.1
+2,20,drug testing,8.4
+2,21,conflict resolution,8.7
+2,22,casino night,9.3
+3,1,gay witch hunt,8.9
+3,2,convention,8.2
+3,3,coup,8.5
+3,4,grief counseling,8
+3,5,initiation,8.2
+3,6,diwali,8
+3,7,branch closing,8.5
+3,8,merger,8.7
+3,9,convict,8.2
+3,10,a benihana christmas,8.7
+3,11,back from vacation,8.5
+3,12,traveling salesmen,8.6
+3,13,return,8.8
+3,14,ben franklin,8.2
+3,15,phyllis wedding,8.3
+3,16,business school,8.8
+3,17,cocktails,8.5
+3,18,negotiation,8.9
+3,19,safety training,8.8
+3,20,product recall,8.7
+3,21,womens appreciation,8.8
+3,22,beach games,9.1
+3,23,job,9.3
+4,1,fun run,8.8
+4,2,dunder mifflin infinity,8.4
+4,3,launch party,8.5
+4,4,money,8.7
+4,5,local ad,8.8
+4,6,branch wars,8.5
+4,7,survivor man,8.3
+4,8,deposition,8.7
+4,9,dinner party,9.3
+4,10,chair model,8.1
+4,11,night out,8.7
+4,12,did i stutter,8.4
+4,13,job fair,7.9
+4,14,goodbye toby,9.3
+5,1,weight loss,8.8
+5,2,business ethics,8.3
+5,3,baby shower,8.1
+5,4,crime aid,8.1
+5,5,employee transfer,8.1
+5,6,customer survey,8.5
+5,7,business trip,8.2
+5,8,frame toby,8.6
+5,9,surplus,8.7
+5,10,moroccan christmas,8.4
+5,11,duel,8.7
+5,12,prince family paper,8.1
+5,13,stress relief,9.6
+5,14,lecture circuit,8.2
+5,15,lecture circuit,8.2
+5,16,blood drive,8.1
+5,17,golden ticket,8.7
+5,18,new boss,8.3
+5,19,two weeks,8.4
+5,20,dream team,8.3
+5,21,michael scott paper company,8.7
+5,22,heavy competition,8.7
+5,23,broke,9.1
+5,24,casual friday,8.3
+5,25,cafe disco,8.7
+5,26,company picnic,8.9
+6,1,gossip,8.7
+6,2,meeting,8.2
+6,3,promotion,8
+6,4,niagara,9.3
+6,5,niagara,9.3
+6,6,mafia,7.7
+6,7,lover,8.6
+6,8,koi pond,8.2
+6,9,double date,8.2
+6,10,murder,8.6
+6,11,shareholder meeting,8.2
+6,12,scotts tots,8.3
+6,13,secret santa,8.5
+6,14,banker,6.8
+6,15,sabre,7.8
+6,16,manager  salesman,8.1
+6,17,delivery,8.4
+6,18,delivery,8.5
+6,19,st patricks day,7.8
+6,20,new leads,7.9
+6,21,happy hour,8.6
+6,22,secretarys day,7.9
+6,23,body language,8
+6,24,coverup,8.2
+6,25,chump,7.9
+6,26,whistleblower,8
+7,1,nepotism,8.4
+7,2,counseling,8.3
+7,3,ys play,8.2
+7,4,sex ed,7.9
+7,5,sting,7.8
+7,6,costume contest,8.2
+7,7,christening,7.5
+7,8,viewing party,7.9
+7,9,wuphfcom,7.8
+7,10,china,8.2
+7,11,classy christmas,8.9
+7,12,ultimatum,8.3
+7,13,seminar,7.7
+7,14,search,8.5
+7,15,pda,8.4
+7,16,threat level midnight,9.3
+7,17,todd packer,7.5
+7,18,garage sale,9.2
+7,19,training day,7.8
+7,20,michaels last dundies,8.9
+7,21,goodbye michael,9.7
+7,22,inner circle,7.7
+7,23,dwight k schrute acting manager,8.7
+7,24,search committee,8.8
+8,1,list,8.2
+8,2,incentive,8.2
+8,3,lotto,7.3
+8,4,garden party,8.1
+8,5,spooked,7.6
+8,6,doomsday,7.8
+8,7,pams replacement,7.7
+8,8,gettysburg,7
+8,9,mrs california,7.7
+8,10,christmas wishes,8
+8,11,trivia,7.9
+8,12,pool party,8
+8,13,jury duty,7.5
+8,14,special project,7.8
+8,15,tallahassee,7.9
+8,16,after hours,8.1
+8,17,test store,7.8
+8,18,last day in florida,7.8
+8,19,get girl,6.7
+8,20,welcome party,7.2
+8,21,angry y,7.1
+8,22,fundraiser,7.1
+8,23,turf war,7.7
+8,24,free family portrait studio,7.8
+9,1,new guys,7.7
+9,2,roys wedding,7.2
+9,3,ys ancestry,7.5
+9,4,work bus,7.9
+9,5,here comes treble,7.1
+9,6,boat,7.8
+9,7,whale,7.7
+9,8,target,7.8
+9,9,dwight christmas,8.4
+9,10,lice,7.7
+9,11,suit warehouse,7.9
+9,12,customer loyalty,8
+9,13,junior salesman,7.7
+9,14,valism,7.6
+9,15,couples discount,7.4
+9,16,moving on,8.2
+9,17,farm,7.5
+9,18,promos,8
+9,19,stairmageddon,8
+9,20,paper airplane,8
+9,21,livin dream,8.9
+9,22,aarm,9.3
+9,23,finale,9.7

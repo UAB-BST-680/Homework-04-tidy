@@ -1,0 +1,142 @@
+---
+title: "Homework 4"
+author: "[YOUR NAME HERE]"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    code_folding: show
+    df_print: paged
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 8
+    highlight: textmate
+    theme: readable
+    toc: yes
+    toc_float: yes
+---
+
+<!-- Feel free to edit theme / highlight in the YAML header above -->
+
+```{r setup, echo=TRUE, message = FALSE, warning = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+# Load packages for homework problems
+library(tidyverse)
+library(gt)
+library(tblStrings)
+
+```
+
+# Overview
+
+The Office is an American mockumentary sitcom television series that depicts the everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company. It aired on NBC from March 24, 2005, to May 16, 2013, lasting a total of nine seasons. There are two datasets describing the office that you will engage with for this assignment. 
+
+## Data dictionary 
+
+The `office_info` data comprise information about every single line ever spoken during the show. 
+
+```{r}
+
+c("season" = "Season",
+  "episode" = "Episode number",
+  "episode_name" = "Episode title",
+  "director" = "Who directed the episode",
+  "writer" = "Who wrote the episode",
+  "character" = "Who said the text",
+  "text" = "The lines spoken by character") %>%
+  enframe() %>% 
+  gt(rowname_col = "name") %>%
+  tab_stubhead(label = 'Variable name') %>% 
+  cols_label(value = 'Variable description') %>% 
+  cols_align('right') %>%
+  tab_header(title = md('Dictionary for The `office_info` data'))
+
+```
+
+The `office_rating` data comprise information about every single line ever spoken during the show. 
+
+```{r}
+
+c("season" = "Season",
+  "episode" = "Episode number",
+  "episode_name" = "Episode title",
+  "imdb_rating" = "The episode's IMDb rating") %>%
+  enframe() %>% 
+  gt(rowname_col = "name") %>%
+  tab_stubhead(label = 'Variable name') %>% 
+  cols_label(value = 'Variable description') %>% 
+  cols_align('right') %>%
+  tab_header(title = md('Dictionary for The `office_ratings` data'))
+
+```
+
+## What are IMDb ratings?
+
+IMDb registered users can cast a vote (from 1 to 10) on every released title in the database. Individual votes are then aggregated and summarized as a single IMDb rating, visible on the title’s main page.
+
+# Problem 1
+
+Read in the two `.csv` files in the `data` directory. Double check to see if the two datasets have the same names for each episode (this needs to be true in order to effectively merge their data). If you find the names do not match, fix it by recoding the `episode_name` values in the data with IMDb ratings. Your finalized data should look like this:
+
+```{r}
+
+read_rds('solutions/01_solution.rds')
+
+```
+
+# Problem 2
+
+For this assignment, you will focus on some of the main characters in The Office. Specifically, 
+
+- Michael
+- Dwight
+- Jim
+- Pam
+- Andy
+
+Count the number of lines spoken by each of these characters in each episode. Pivot these count data into a wider format so that each row is an episode and there is one column for each of the main characters. Values in each character's  column should show the number of lines spoken by the given character in the given episode. Once the data are in this form, merge them with the `office_ratings` data. Last, clean the names of your data and arrange your rows so that the earlier episodes precede later ones. Your solution should look something like this.
+
+```{r}
+
+read_rds('solutions/02_solution.rds')
+
+```
+
+# Problem 3
+
+```{r}
+
+read_rds('solutions/03_solution.rds') 
+
+```
+
+```{r eval = FALSE}
+
+# rmd errors if you try to print this df
+read_rds('solutions/03_solution.rds') %>% 
+  mutate(tbl_val = numPer(total_lines, sum(total_lines)))
+
+```
+
+
+# Problem 4
+
+```{r}
+
+read_rds('solutions/04_solution.rds')
+
+```
+
+# Problem 5
+
+```{r}
+
+read_rds('solutions/05_solution.rds') %>% 
+  select(-tbl_val)
+
+```
+
+# Problem 6
+
+See solution in `solutions/06_solution.html`
