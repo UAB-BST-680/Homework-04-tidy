@@ -105,22 +105,21 @@ read_rds('solutions/02_solution.rds')
 
 # Problem 3
 
+Using the data you created in problem 2, create another dataframe that shows how many lines each of the main character spoke throughout the entirety of the series. Use the `tblStrings` package (specifically, the `tbl_string()` function) to create a character valued column containing the total number and proportion of lines spoken by each character. For the proportion, the denominator should be the sum of all of the lines spoken by the 5 main characters.  
+
 ```{r}
 
 read_rds('solutions/03_solution.rds') 
 
 ```
 
-```{r eval = FALSE}
-
-# rmd errors if you try to print this df
-read_rds('solutions/03_solution.rds') %>% 
-  mutate(tbl_val = numPer(total_lines, sum(total_lines)))
-
-```
-
-
 # Problem 4
+
+Create a dataframe that shows the proportion of lines spoken by each character in each season as well as the mean IMDB rating for each season. The denominator for each proportion should be the sum of total lines spoken by the main characters in the given season.
+
+Hints: 
+
+- Create a dataframe that summarizes each season with the mean IMDB rating and then merge this dataframe with the lines by season data.
 
 ```{r}
 
@@ -130,13 +129,34 @@ read_rds('solutions/04_solution.rds')
 
 # Problem 5
 
+Using the data you created in problem 4, 
+
+- create a figure for each character with bars indicating the proportion of lines spoken by that character in each season and points showing the mean IMDB rating of the seasons. 
+
+- merge the dataframe you created with the data describing the total number of lines from each character.
+
+Hints: 
+
+- make sure you re-scale the ratings to be between 0 and 1 or else the plot will look a little off!
+
+- I used `theme_void()`
+
+- use `nest` and then `mutate`, applying `map` to iterate over list columns.
+
 ```{r}
 
-read_rds('solutions/05_solution.rds') %>% 
-  select(-tbl_val)
+read_rds('solutions/05_solution.rds')
 
 ```
 
 # Problem 6
 
-See solution in `solutions/06_solution.html`
+Put everything together using `gt`. Create a table that features images of the characters, a plot for their lines over time, and a summary string for their lines overall. 
+
+Hints: 
+
+- You can make a new column that contains the file locations of images for each character. This will make it easier to use the `text_transform` function along with `map`
+
+- [This page](https://gt.rstudio.com/reference/ggplot_image.html) and [this page](https://gt.rstudio.com/reference/local_image.html) from the `gt` website are helpful.
+
+See my solution in `solutions/06_solution.html`. (be sure to open in browser)
